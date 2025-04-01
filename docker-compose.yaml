@@ -1,4 +1,3 @@
-version: '3.9'
 services:
   discovery:
     build:
@@ -14,4 +13,5 @@ services:
 
 networks:
   sgu-networks:
-    external: true
+    name: sgu-networks
+    driver: bridge
